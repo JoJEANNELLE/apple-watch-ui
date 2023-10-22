@@ -5,6 +5,11 @@ Apple Watch menu on web app
 
 ### CMD
 
+intall :
+```sh
+npm i
+```
+
 dev :
 ```sh
 npm run dev
