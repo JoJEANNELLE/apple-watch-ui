@@ -3,10 +3,12 @@
 }
 
 body {
-  background-color: grey;
+  background-color: black;
   overflow: hidden;
   margin: 0;
   padding: 0;
+  width: 100vw;
+  height: 100vh;
 }
 
 .Menu {
@@ -14,6 +16,7 @@ body {
   &_wrapper {
     display: flex;
     flex-direction: column;
+    touch-action: none;
   } 
 
   &_row {
@@ -22,6 +25,15 @@ body {
 
   &_item {
     border-radius: 50%;
-    background: blue;
+    background: azure;
+    background-size: cover;
+    transform-origin: center;
+    opacity: .4;
+
+    transition: opacity .75s ease;
+
+    &.active {
+      opacity: 1;
+    }
   }
 }
